@@ -54,7 +54,16 @@
                                 <div v-masonry-tile  v-for="(store, index) in filteredStores" :key="index" class="stores-grid-item">
                             	    <div class="store_logo_container">
                             	        <router-link :to="'/stores/'+ store.slug">
-                                			<img class="store_img" :src="store.image_url" alt="">
+                                			<div v-if="!store.no_store_logo">
+                                			    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/png/1533845184449/transparent_logo.png">
+                                			    <img  class="store_img" :src="store.store_front_url_abs" alt="">
+                                			</div>
+                                            <div v-else class="no_logo_container">
+                                                <img class="store_img" src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225" alt="">
+                                                <div class="no_logo_text">
+                                                    <div class="store_text"><h4>{{ store.name }}</h4></div>
+                                                </div>
+                                            </div>
                                 			<div class="store_tag" v-if="store.total_published_promos">
             									<div class="store_tag_text">Promotion</div>
             								</div>
@@ -161,8 +170,11 @@
                     _.forEach(this.processedStores, function(value, key) {
                         if(_.includes(value.categories, vm.dineFilter)) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1529516445000/cerritos.png";
+                                value.no_store_logo = true;
+                            } else {
+                                value.no_store_logo = false;
                             }
+
                             store_list.push(value);
                         }
                     });
