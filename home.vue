@@ -255,7 +255,7 @@
                 loadData: async function() {
                     try {
                         let results = await Promise.all([this.$store.dispatch("getData", "banners"), this.$store.dispatch("getData","promotions"), this.$store.dispatch("getData", "events")]);
-                        // this.$store.dispatch('LOAD_PAGE_DATA', {url: "https://cerritos.mallmaverick.com/api/v3/cerritos/social.json"})
+                        // this.$store.dispatch('LOAD_PAGE_DATA', {url: " /social.json"})
                         return results;
                     } catch(e) {
                         console.log("Error loading data: " + e.message);    
