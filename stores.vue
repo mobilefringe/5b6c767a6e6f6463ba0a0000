@@ -63,7 +63,7 @@
                                             <div v-else class="no_logo_container">
                                                 <img class="store_img" src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225" alt="">
                                                 <div class="no_logo_text">
-                                                    <div class="store_text"><h4>{{ store.name }}</h4></div>
+                                                    <div class="store_text"><h3>{{ store.name }}</h3></div>
                                                 </div>
                                             </div>
                                 			<div class="store_tag" v-if="store.total_published_promos">
