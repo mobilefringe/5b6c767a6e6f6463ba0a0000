@@ -144,11 +144,11 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         url: "https://www.facebook.com/RanchoSanDiegoTC",
                         iconClass: "fab fa-facebook"
                     },
-                    {
-                        name: "Instagram",
-                        url: "https://www.instagram.com/shopcerritos",
-                        iconClass: "fab fa-instagram"
-                    }
+                    // {
+                    //     name: "Instagram",
+                    //     url: "https://www.instagram.com/",
+                    //     iconClass: "fab fa-instagram"
+                    // }
                 ],
             }
         },
