@@ -179,7 +179,6 @@
                         }
                     });
                     this.filteredStores = store_list;
-                    console.log("store_list",store_list);
                     return store_list
                 },
                 dropDownCats() {
