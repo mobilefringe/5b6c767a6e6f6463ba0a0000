@@ -5,7 +5,7 @@
             <div v-if="dataLoaded" v-cloak>
                 <div class="inside_page_header" v-if="pageBanner" v-bind:style="{ background: 'linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(' + pageBanner.image_url + ') center center' }">
                     <div class="main_container position_relative">
-                        <h2 v-html="currentPage.title"></h2>
+                        <h2 v-if="currentPage" v-html="currentPage.title"></h2>
                     </div>
                 </div>
                 <div class="main_container">
@@ -16,7 +16,7 @@
                     </div>
                     <div class="row margin_60">
                         <div class="col-md-12">
-                            <div class="page_body" v-html="currentPage.body"></div>
+                            <div v-if="currentPage" class="page_body" v-html="currentPage.body"></div>
                         </div>
                     </div>
                 </div>
