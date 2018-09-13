@@ -62,10 +62,16 @@
                 ])
             },
             methods: {
+                loadData: async function () {
+                    try {
+                        let results = await Promise.all([this.$store.dispatch("getData", "repos")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
                 updateCurrentPage(id) {
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
                     var _this = this;
-                    this.$store.dispatch("getData", "repos")
                     this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + this.id + ".json" }).then(function (response) {
                         _this.currentPage = response.data;
                         _this.$breadcrumbs[0].meta.breadcrumb = _this.currentPage.title
