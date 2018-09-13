@@ -38,15 +38,17 @@
                 }
             },
             created() {
-                var temp_repo = this.findRepoByName('Events Banner').images;
-                console.log(temp_repo)
-                if(temp_repo != null) {
-                    this.pageBanner = temp_repo[0];
-                } else {
-                    this.pageBanner = {
-                        "image_url": "//codecloud.cdn.speedyrails.net/sites/5b6c767a6e6f6463ba0a0000/image/jpeg/1529532304000/insidebanner2.jpg"
+                this.loadData().then(response => {
+                    var temp_repo = this.findRepoByName('Events Banner').images;
+                    if(temp_repo != null) {
+                        this.pageBanner = temp_repo[0];
+                    } else {
+                        this.pageBanner = {
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b6c767a6e6f6463ba0a0000/image/jpeg/1529532304000/insidebanner2.jpg"
+                        }
                     }
-                }
+                    this.dataLoaded = true;
+                });
                     
                 this.updateCurrentPage(this.id);
             },
