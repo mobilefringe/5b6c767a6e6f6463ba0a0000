@@ -70,6 +70,7 @@
                     }
                     
                     var temp_repo1 = this.findRepoByName('Leasing Booklet');
+                    console.log(temp_repo1)
                     if(!_.isEmpty(temp_repo1)) {
                         this.leasingBooklet = temp_repo1.images[0].image_url;
                     }
