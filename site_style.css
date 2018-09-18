@@ -1700,8 +1700,7 @@ $anim-speed: 0.3s;
         color: #000;
     }
 }
-.store_details_desc {
-    p, p span {
+.store_details_desc, .store_details_desc p, .store_details_desc p span {
         font-size: 1rem !important;
         line-height: 1.8rem !important;
         color: #000;
