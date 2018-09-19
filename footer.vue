@@ -15,7 +15,7 @@
             </div>
             <div class="footer_content">
                 <div class="row main_container">
-                    <p class="margin_20">{{ siteInfo.siteName }}</p>    
+                    <p class="margin_20">{{ property.name }}</p>    
                     <div class="margin_20 social_icon_container">
 					    <span class="social_icon" v-for="item in social_media">
                             <a :href="item.url" target="_blank">
