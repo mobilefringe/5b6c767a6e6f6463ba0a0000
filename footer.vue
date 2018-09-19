@@ -65,7 +65,6 @@
                     'timezone',
                 ]),
                 copyright_year() {
-                    console.log(this.property)
                     return moment().year();
                 },
                 getPropertyAddress() {
