@@ -15,11 +15,11 @@
             </div>
             <div class="footer_content">
                 <div class="row main_container">
-                    <p class="margin_20">{{ property.name }}</p>    
+                    <p class="margin_20">{{ siteInfo.siteName }}</p>    
                     <div class="margin_20 social_icon_container">
 					    <span class="social_icon" v-for="item in social_media">
                             <a :href="item.url" target="_blank">
-                                <p class="accessibility">{{item.name}}</p>
+                                <p class="accessibility">{{ item.name }}</p>
                                 <i :class="item.iconClass" aria-hidden="true"></i>
                             </a>
                         </span>
