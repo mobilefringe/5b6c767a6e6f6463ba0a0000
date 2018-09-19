@@ -137,8 +137,8 @@
                     this.dataLoaded = true;
                     
                     this.query = this.$route.query.category
-                    if(this.query == "dining_full_service"){
-                      this.selectedCat = "Dining Full Service";
+                    f(this.query == "grocery"){
+                      this.selectedCat = "Grocery";
                       this.filterByCategory;
                     } else {
                         this.selectedCat = "All";
@@ -148,9 +148,10 @@
             },
             watch: {
                 $route: function() {
+                    console.log(this.$route)
                     this.query = this.$route.query.category
-                    if(this.query == "dining_full_service"){
-                      this.selectedCat = "Dining Full Service";
+                    if(this.query == "grocery"){
+                      this.selectedCat = "Grocery";
                       this.filterByCategory;
                     } else {
                         this.selectedCat = "All";
