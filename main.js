@@ -187,7 +187,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
                     this.property.name = "Rancho San Diego Towne Center";
                     let results = await Promise.all([this.$store.dispatch("INITIALIZE_LOCALE"), this.$store.dispatch("getData", "hours"), this.$store.dispatch("getData", "stores")]);
-                    // await Promise.all([this.$store.dispatch("LOAD_META_DATA")]);
+                    await Promise.all([this.$store.dispatch("LOAD_META_DATA")]);
                     return results;
                 } catch (e) {
                     console.log("Error loading data: " + e.message);    
