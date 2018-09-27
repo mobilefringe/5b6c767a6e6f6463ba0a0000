@@ -84,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="visible-xs margin_60 insta-feed-container">
+                    <div v-if="instaFeed" class="visible-xs margin_60 insta-feed-container">
                         <div class="insta_prev"></div>
                         <slick ref="slick" :options="instaOptions">
                             <div class="insta-feed-image " v-for="(item, index) in instaFeed">
