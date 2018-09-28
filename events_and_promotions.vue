@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row margin_60">
+                        <div v-if="!noMorePromos" class="row margin_60">
                             <div class="col-md-12">
                                 <button class="animated_btn event_load_more" v-if="!noMorePromos" @click="handleButton">Load More</button>
                             </div>
