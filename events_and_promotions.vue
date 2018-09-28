@@ -67,7 +67,7 @@
                                         <div class="event_desc" v-html="item.description_short"></div>
                                         <router-link :to="{ name: 'promotionDetails', params: { id: item.slug, banner: pageBanner }}">
                                             <!--<p class="event_link">View Promotion Details <i class="fas fa-angle-double-right"></i></p>-->
-                                            <div class="animated_btn">View Event Details <i class="fas fa-angle-double-right"></i></div>
+                                            <div class="animated_btn">View Promotion Details <i class="fas fa-angle-double-right"></i></div>
                                         </router-link>
                                         <hr class="event_seperator">
                                     </div>
