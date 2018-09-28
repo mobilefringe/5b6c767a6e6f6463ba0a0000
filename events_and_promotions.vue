@@ -67,9 +67,8 @@
                                         <router-link :to="{ name: 'promotionDetails', params: { id: item.slug, banner: pageBanner }}">
                                             <p class="event_link">View Promotion Details <i class="fas fa-angle-double-right"></i></p>
                                         </router-link>
-                                        <hr>
+                                        <hr class="event_seperator">
                                     </div>
-                                    
                                 </div>
                             </div>
                         </transition-group>
