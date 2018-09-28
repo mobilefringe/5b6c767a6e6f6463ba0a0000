@@ -68,6 +68,7 @@
                                             <p class="event_link">View Promotion Details <i class="fas fa-angle-double-right"></i></p>
                                         </router-link>
                                     </div>
+                                    <hr>
                                 </div>
                             </div>
                         </transition-group>
