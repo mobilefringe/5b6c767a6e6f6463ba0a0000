@@ -120,7 +120,7 @@
                 }); 
                 
                 this.$store.dispatch("getData", "contests").then(response => {
-                    this.currentContest = this.findContestByShowOnSlug(''); // Add Contest URL
+                    this.currentContest = this.findContestByShowOnSlug('sandiego-contest'); // Add Contest URL
                     this.dataLoaded = true;
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
