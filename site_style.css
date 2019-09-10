@@ -461,6 +461,10 @@ a {
         p {
             margin: 0;
         }
+        a:hover {
+            color: #FFF;
+            text-decoration: underline;
+        }
     }
 }
 
