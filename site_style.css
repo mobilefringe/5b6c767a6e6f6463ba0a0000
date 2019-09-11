@@ -429,8 +429,10 @@ a {
             margin: 0 0 5px;
         }
         .margin_40 {
-            color: #FFF;
-            text-decoration: underline;
+            a:hover{
+                color: #FFF;
+                text-decoration: underline;
+            }
         }
         .social_icon_container {
             margin: 10px 0;
