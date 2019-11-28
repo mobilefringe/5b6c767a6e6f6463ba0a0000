@@ -24,7 +24,7 @@
                                 <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
                             </div>
                             <div v-else>
-                                <a :href="banner.url" :aria-label="'Go to details page for ' + banner.name + ' banner.'">
+                                <a :href="banner.url" target="_blank" :aria-label="'Open new tab to go to details for ' + banner.name + ' banner.'">
                                     <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
                                 </a>
                             </div>
