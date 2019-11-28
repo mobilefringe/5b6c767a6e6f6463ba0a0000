@@ -186,7 +186,8 @@
                     'timezone',
                     'getPropertyHours',
                     'processedPromos',
-                    'processedEvents'
+                    'processedEvents',
+                    'findMetaDataByPath'
                 ]),
                 homeBanners() {
                     var banners = [];
