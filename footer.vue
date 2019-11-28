@@ -27,7 +27,11 @@
                     <p>{{ getPropertyAddress }}</p>
                     <p v-if="property.contact_phone" class="margin_40"><a :href="'tel:' + property.contact_phone">{{ property.contact_phone }}</a></p>
                     <div class="footer_links">
-                        <p><a href="/pages/sandiego-privacy-policy/" >Privacy Policy</a></p>
+                        <p>
+                            <router-link to="/pages/sandiego-privacy-policy/">
+                            Privacy Policy
+                            </router-link>   
+                        </p>
                     </div>
                 </div>
             </div>
