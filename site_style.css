@@ -336,8 +336,7 @@ a {
                 color: #FFF;
                 &:hover, &:active, &:focus, &:visited {
             	    background: $secondary;
-            	    color: #000;
-            	    a {
+            	    p,a {
             	        color: #000;
             	    }
             	}
