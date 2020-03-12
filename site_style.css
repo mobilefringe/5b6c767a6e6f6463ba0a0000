@@ -346,9 +346,14 @@ a {
             	    color: #fff;
             	    
             	}
-            	a:hover {
-                    color: #000;
-                }
+            	a {
+            	    &:hover {
+                        color: #000;
+                    }
+                    &:focus {
+                        color: #fff;
+                    }
+            	}
             }
         }
     }
